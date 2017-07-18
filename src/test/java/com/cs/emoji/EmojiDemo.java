@@ -1,5 +1,6 @@
 package com.cs.emoji;
 
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
 import java.nio.file.Files;
@@ -41,7 +42,7 @@ public class EmojiDemo {
 					return new String(Character.toChars(i));
 				}).collect(Collectors.toList());
 
-				//System.out.println(String.format("%s-->%s-->%s", sequence, StringUtils.join(collect, ""), description));
+				System.out.println(String.format("%s-->%s-->%s", sequence, StringUtils.join(collect, ""), description));
 				//ss.remove( m_line.group(1));
 			}
 		});
